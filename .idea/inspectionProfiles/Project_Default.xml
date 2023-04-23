@@ -1,0 +1,38 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="14">
+            <item index="0" class="java.lang.String" itemvalue="pygit2" />
+            <item index="1" class="java.lang.String" itemvalue="scikit_learn" />
+            <item index="2" class="java.lang.String" itemvalue="h5py" />
+            <item index="3" class="java.lang.String" itemvalue="open3d" />
+            <item index="4" class="java.lang.String" itemvalue="gitpython" />
+            <item index="5" class="java.lang.String" itemvalue="numpy" />
+            <item index="6" class="java.lang.String" itemvalue="cudatoolkit" />
+            <item index="7" class="java.lang.String" itemvalue="pytorch" />
+            <item index="8" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="9" class="java.lang.String" itemvalue="GitPython" />
+            <item index="10" class="java.lang.String" itemvalue="MinkowskiEngine" />
+            <item index="11" class="java.lang.String" itemvalue="kernels" />
+            <item index="12" class="java.lang.String" itemvalue="torchvision" />
+            <item index="13" class="java.lang.String" itemvalue="vtk" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.sorted" />
+          <option value="cpp_wrappers.cpp_neighbors.neighbors.batch_query" />
+          <option value="cpp_wrappers.cpp_subsampling.grid_subsampling.subsample_batch" />
+          <option value="numpy.zeros" />
+          <option value="numpy.load" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

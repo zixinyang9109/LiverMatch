@@ -1,0 +1,76 @@
+misc:
+  exp_dir: liver_3D_1_one_transformer_c
+  mode: train
+  gpu_mode: True
+  verbose: True
+  verbose_freq: 200
+  snapshot_freq: 1
+  pretrain: '/home/yzx/yzx/Deformable_Registration/LiverMatch/snapshot/liver_3D_1_one_transformer/checkpoints/model_best_loss.pth'
+  #'/home/yzx/yzx/Deformable_Registration/My_Predator-main/snapshot/liver_3D_1/checkpoints/model_best_loss.pth'
+
+
+model:
+  model_name: liver
+  num_layers: 4
+  in_points_dim: 3
+  first_feats_dim: 128
+  final_feats_dim: 32 # +2 = final LastUnaryBlock
+  first_subsampling_dl: 0.025 #To calculate r
+  conv_radius: 2.5 # To calculate r
+  deform_radius: 5.0 # calibrate_neighbors
+  in_feats_dim: 1 #KPCONV
+  num_kernel_points: 15 # KPCONV
+  KP_extent: 2.0 #kpconv
+  KP_influence: linear # kpconv
+  aggregation_mode: sum # kpconv
+  fixed_kernel_points: center # kpconv
+  use_batch_norm: True #kpconv
+  batch_norm_momentum: 0.02 #kpconv
+  modulated: False # kpconv
+
+transformer:
+  feature_dim: 384 #256
+  n_head: 1
+  layer_types: ['self', 'cross']
+
+matching:
+  feature_dim_m: 34
+  confidence_threshold: 0.0
+  dsmax_temperature: 0.1
+
+
+loss:
+  focal_alpha: 0.25
+  focal_gamma: 2.0
+  pos_weight: 1.0
+  neg_weight: 1.0
+  confidence_threshold_metric: 0.0  #confidence_threshold for evaluation, if want to use
+  vis_weight: 1.0
+  match_weight: 1.0
+  matrix_weight: 1.0
+
+optimiser:
+  optimizer: SGD
+  max_epoch: 35
+  lr: 0.001
+  weight_decay: 0.000001
+  momentum: 0.98
+  scheduler: ExpLR
+  scheduler_gamma: 0.95
+  scheduler_freq: 1
+  iter_size: 1
+
+dataset:
+  dataset: liver
+  benchmark: Liver
+  batch_size: 1 #8
+  num_workers: 0
+  augment_noise: 0.02
+  root_path: "/home/yzx/yzx/Deformable_Registration/Dataset/3Dircadb1_simDeform_npz_zero_train/"
+  test_root_path: "/home/yzx/yzx/Deformable_Registration/Dataset/3Dircadb1_simDeform_npz_zero_test/"
+  npz_list: "split/1_split.npz"
+  max_points: 90000
+  overlap_radius: 0.01 # unit 1mm/100
+  use_slice: False
+  slice: 200
+
