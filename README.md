@@ -40,7 +40,7 @@ python demos/PBSM-inSilicoData_demo.py
 
 The simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow "NoDerivatives".
 
-We will release a larger dataset using Medical Segmentation Decathlon (http://medicaldecathlon.com) under the license CC BY-SA 4.0, which allows modifications.
+We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
