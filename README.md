@@ -61,8 +61,8 @@ Please feel free to send an email to yy8898@rit.edu for questions.
 
 ## Acknowledgements
 
-- [Lepard](https://github.com/rabbityl/lepard)
+- [Lepard](https://github.com/rabbityl/lepard) 
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
-- [V2S-Net] (https://gitlab.com/nct_tso_public/Volume2SurfaceCNN)
+- [V2S-Net] (https://gitlab.com/nct_tso_public/Volume2SurfaceCNN) Deformation simulation.
 - Liver registration dataset https://opencas.webarchiv.kit.edu/?q=PhysicsBasedShapeMatching
 - Liver segmentation 3D-IRCADb-01 https://www.ircad.fr/research/data-sets/liver-segmentation-3d-ircadb-01/
