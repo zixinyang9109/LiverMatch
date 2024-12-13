@@ -1,7 +1,7 @@
 # LiverMatch - Learning Feature Descriptors for Pre- and Intra-operative Point Cloud Matching for Laparoscopic Liver Registration
 
 ### Introduction
-In this project, we show promising results of using learning-based descriptors for laparoscopic liver registration (LLS).
+In this project, we show promising results of using learning-based descriptors for initial rigid registration in laparoscopic liver registration (LLS).
 
 ### Install
 ```
@@ -47,11 +47,13 @@ We will release a larger dataset under the license CC BY-SA 4.0, which allows mo
 
 ### To train and test on other datasets
 
-In our following works, we found that, to get it to work correctly on other datasets, attentions are needed to:
+In our following works, we found that, to get correspondence-based methods using KPConv to work correctly on other datasets, attentions are needed to:
 
 1. Normalize and voxelize the point clouds properly.
 2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
 3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly. Otherwise, SVD is suggested.
+
+This is an exploration work, and the method may have limitations. However, this simple method should work reasonably if the above attention has been paid, even compared to more sophisticated techniques.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
