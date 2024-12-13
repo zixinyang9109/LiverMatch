@@ -41,7 +41,17 @@ python demos/PBSM-inSilicoData_demo.py # The weight is included in the snapshot.
 
 The simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow "NoDerivatives".
 
-We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications.
+We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications.(It is more difficult than I had imagined, as a lot of details have to be paid attention to, especially for the sim2real test, but it is close...)
+
+
+
+### To train and test on other datasets
+
+In our following works, we found that, to get it to work correctly on other datasets, attentions are needed to:
+
+1. Normalize and voxelize the point clouds properly.
+2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
+3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
