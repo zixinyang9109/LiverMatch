@@ -51,7 +51,7 @@ In our following works, we found that, to get it to work correctly on other data
 
 1. Normalize and voxelize the point clouds properly.
 2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
-3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly.
+3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly. Otherwise, SVD is suggested.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
