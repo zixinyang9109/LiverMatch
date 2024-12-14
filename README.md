@@ -45,7 +45,7 @@ We will release a larger dataset under the license CC BY-SA 4.0, which allows mo
 
 
 
-### To train and test on other datasets
+### Important note to train and test on other datasets
 
 In our following works, we found that, to get correspondence-based methods using KPConv to work correctly on other datasets, attentions are needed to:
 
