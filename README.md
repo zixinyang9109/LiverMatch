@@ -53,7 +53,7 @@ In our following works, we found that, to get correspondence-based methods using
 2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
 3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly. Otherwise, SVD is suggested.
 
-This is an exploration work, and the method may have limitations. However, this simple method should work reasonably if the above attention has been paid, even compared to more sophisticated techniques.
+This is an exploration work, and the method do have limitations. However, this simple method should work reasonably if the above attention has been paid, even compared to more sophisticated techniques.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
