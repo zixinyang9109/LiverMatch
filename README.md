@@ -47,13 +47,13 @@ We will release a larger dataset under the license CC BY-SA 4.0, which allows mo
 
 ### Important note to train and test on other datasets
 
-In our following works, we found that, to get correspondence-based methods using KPConv to work correctly on other datasets, attentions are needed to:
+In our following works, we found that to get correspondence-based methods using KPConv to work correctly on other datasets, attentions are needed to:
 
 1. Normalize and voxelize the point clouds properly.
 2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
-3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be set properly. Otherwise, SVD is suggested.
+3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be appropriately set. Otherwise, SVD is suggested.
 
-This is an exploration work, and the method do have limitations. However, this simple method should work reasonably if the above attention has been paid, even compared to more sophisticated techniques.
+This is an exploration work, and the method does have limitations. However, this simple method should work reasonably well if the above attention has been paid, even compared to more sophisticated techniques.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
