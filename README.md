@@ -1,7 +1,7 @@
 # LiverMatch - Learning Feature Descriptors for Pre- and Intra-operative Point Cloud Matching for Laparoscopic Liver Registration
 
 ### Introduction
-In this project, we show promising results of using learning-based descriptors for initial rigid registration in laparoscopic liver registration (LLS).
+In this project, we show promising results of using learning-based descriptors/correspondence for initial rigid registration in laparoscopic liver registration (LLS). 
 
 ### Install
 ```
@@ -39,9 +39,9 @@ python demos/PBSM-inSilicoData_demo.py # The weight is included in the snapshot.
 
 ### Dataset
 
-The simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow "NoDerivatives".
+The simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow the "NoDerivatives" policy.
 
-We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications.(It is more difficult than I had imagined, as a lot of details have to be paid attention to, especially for the sim2real test, but it is close...)
+We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications in [P2P](https://github.com/zixinyang9109/P2P). Also, datasets included in [BCF-FEM](https://github.com/zixinyang9109/BCF-FEM could be helpful.
 
 
 
@@ -53,7 +53,7 @@ In our following works, we found that to get correspondence-based methods using 
 2. Adjust the hyperparameter "init_sampling" required for KPConv to allow downsampling for different scales.
 3. If RANSAC ICP implemented in open3D is used to estimate the transformation, the hyperparameter "max_correspondence_distance" should be appropriately set. Otherwise, SVD is suggested.
 
-This is an exploration work, and the method does have limitations. However, this simple method should work reasonably well if the above attention has been paid, even compared to more sophisticated techniques.
+This is an exploratory work, and the method does have limitations. However, this simple method should work reasonably well if the above attention has been paid, even compared to more sophisticated techniques.
 
 Please feel free to send an email to yy8898@rit.edu for questions.
 
