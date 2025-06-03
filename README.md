@@ -41,7 +41,7 @@ python demos/PBSM-inSilicoData_demo.py # The weight is included in the snapshot.
 
 The simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow the "NoDerivatives" policy.
 
-We will release a larger dataset under the license CC BY-SA 4.0, which allows modifications in [P2P](https://github.com/zixinyang9109/P2P). Also, datasets included in [BCF-FEM](https://github.com/zixinyang9109/BCF-FEM) could be helpful.
+We will release a larger dataset under the license CC BY-SA 4.0 in [P2P](https://github.com/zixinyang9109/P2P), which allows modifications. Also, datasets included in [BCF-FEM](https://github.com/zixinyang9109/BCF-FEM) could be helpful.
 
 
 
