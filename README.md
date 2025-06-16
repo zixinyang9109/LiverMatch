@@ -1,7 +1,8 @@
 # LiverMatch - Learning Feature Descriptors for Pre- and Intra-operative Point Cloud Matching for Laparoscopic Liver Registration
 
 ### Introduction
-In this project, we show promising results of using learning-based descriptors/correspondence for initial rigid registration in laparoscopic liver registration (LLS). 
+
+In this project, we present, for the first time, promising results demonstrating the use of learning-based descriptors and correspondences for initial rigid registration in laparoscopic liver surgery (LLS).
 
 ### Install
 ```
