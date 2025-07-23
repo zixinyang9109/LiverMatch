@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This work presents, for the first time, compelling evidence that learning-based descriptors and correspondences can effectively support initial rigid registration in laparoscopic liver surgery (LLS), paving the way for their practical application in real-world surgical settings.
+This work presents, for the first time, compelling evidence that learning-based descriptors and correspondences can effectively support initial rigid registration in laparoscopic liver surgery (LLS), opening the door for their potential applications in real-world surgical settings.
 
 ### Dataset
 
