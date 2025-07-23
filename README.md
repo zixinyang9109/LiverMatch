@@ -34,13 +34,7 @@ Please change the paths in the following files and run:
 
 ```
 python train.py configs/liver.yaml
-```
-
-```
 python eval.py
-```
-
-```
 python demos/PBSM-inSilicoData_demo.py # The weight is included in the snapshot. 
 ```
 
