@@ -66,6 +66,8 @@ Please feel free to send an email to yy8898@rit.edu for questions.
 
 ## Citation
 
+Please consider citing our paper :blush::
+
 ```bibtex
 @article{yang2023learning,
   title={Learning feature descriptors for pre-and intra-operative point cloud matching for laparoscopic liver registration},
