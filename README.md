@@ -8,7 +8,7 @@ This work presents, for the first time, compelling evidence that learning-based 
 
 The original simulated dataset uses the 3D-IRCADb-01 dataset under the license CC BY-NC-ND 4.0. In this license, we should follow the "NoDerivatives" policy.
 
-In our following work, we  release a larger dataset in [P2P](https://github.com/zixinyang9109/P2P) under the license CC BY-SA 4.0, which allows modifications. Also, datasets included in [BCF-FEM](https://github.com/zixinyang9109/BCF-FEM) could be helpful.
+In our following work, we released a larger dataset in [P2P](https://github.com/zixinyang9109/P2P) under the license CC BY-SA 4.0, which allows modifications. Also, datasets included in [BCF-FEM](https://github.com/zixinyang9109/BCF-FEM) could be helpful.
 
 
 ### Install
